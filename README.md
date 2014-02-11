@@ -1,4 +1,4 @@
-# data_api
+# Data API
 
 The Cloudlet Platforms data_api component handles data request from the mongrel2 web server and processes them and passes them on to other Cloudlet Platform components for more processing.
 
