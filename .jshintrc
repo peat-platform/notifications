@@ -12,6 +12,7 @@
    "eqnull"       : true,
    "node"         : true,
    "asi"          : true,
+   "lastsemic"    : true,
    "indent"       : 3,
    "strict"       : true,
    "forin"        : true,

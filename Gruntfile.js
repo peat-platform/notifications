@@ -2,9 +2,9 @@
 
 module.exports = function(grunt) {
 
-    var tests       = 'test/**/*_test.js'
-    var build_tests = 'build/instrument/' + tests
-    var lib         = 'lib/**/*.js'
+    var tests = 'test/**/*_test.js';
+    var build_tests = 'build/instrument/' + tests;
+    var lib = 'lib/**/*.js';
 
 
     grunt.initConfig({
@@ -90,7 +90,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
-  grunt.loadNpmTasks('grunt-testem');
   grunt.loadNpmTasks('grunt-qunit-cov');
   grunt.loadNpmTasks('grunt-plato');
   grunt.loadNpmTasks('grunt-node-tap');
