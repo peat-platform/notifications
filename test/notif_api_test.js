@@ -33,11 +33,11 @@ notif_api.init({
 exports['testAccess'] = {
   setUp: function(done) {
     // setup here
-    this.testCorrectName      = "/notif/subscription/aaaa"
-    this.testCorrectName1     = "/notif/subscription/bbbb"
-    this.testCorrectName2     = "/notif/subscription/cccc"
-    this.testCorrectName3     = "/notif/subscription/dddd"
-    this.testIncorrectName    = "/notif/subscription"
+    this.testCorrectName      = "/api/v1/subscription/aaaa"
+    this.testCorrectName1     = "/api/v1/subscription/bbbb"
+    this.testCorrectName2     = "/api/v1/subscription/cccc"
+    this.testCorrectName3     = "/api/v1/subscription/dddd"
+    this.testIncorrectName    = "/api/v1/subscription"
     done()
   },
   'incorrect format name': function(test) {
@@ -84,11 +84,11 @@ exports['testAccess'] = {
 exports['testGetCloudlet'] = {
   setUp: function(done) {
     // setup here
-    this.testCorrectName      = "/notif/subscription/aaaa"
-    this.testCorrectName1     = "/notif/subscription/bbbb"
-    this.testCorrectName2     = "/notif/subscription/cccc"
-    this.testCorrectName3     = "/notif/subscription/dddd"
-    this.testIncorrectName    = "/notif/subscription"
+    this.testCorrectName      = "/api/v1/subscription/aaaa"
+    this.testCorrectName1     = "/api/v1/subscription/bbbb"
+    this.testCorrectName2     = "/api/v1/subscription/cccc"
+    this.testCorrectName3     = "/api/v1/subscription/dddd"
+    this.testIncorrectName    = "/api/v1/subscription"
     done()
   },
   'incorrect format name': function(test) {
@@ -221,20 +221,26 @@ exports['testProcessMongrel2'] = {
          action  : 'get',
          uuid    : '123123',
          connId  : '345345345',
-         path    : '/notif/subscription/aaaa',
+         path    : '/api/v1/subscription/aaaa',
          headers : {
             METHOD : 'GET'
          }
       }
 
-      var actual = notif_api.processMongrel2Message(testInput);
+      notif_api.processMongrel2Message(testInput, function(actual){
 
+         console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+         console.log(actual)
+         console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@")
 
-      test.equals(actual.uuid,        '123123',       "should be '123123'")
-      test.equals(actual.connId,      '345345345',    "should be 345345345")
-      test.equals(actual.action,      'GET',          "should be GET")
-      test.equals(actual.cloudlet,    'aaaa',         "should be aaaa")
-      test.equals(actual.access,      'subscription', "should be subscription")
+         test.equals(actual.uuid,        '123123',       "should be '123123'")
+         test.equals(actual.connId,      '345345345',    "should be 345345345")
+         test.equals(actual.action,      'GET',          "should be GET")
+         test.equals(actual.cloudlet,    'aaaa',         "should be aaaa")
+         test.equals(actual.access,      'subscription', "should be subscription")
+
+      });
+
       test.done();
    },
    'incorrect format'   : function(test) {
@@ -243,13 +249,13 @@ exports['testProcessMongrel2'] = {
          action  : 'put',
          uuid    : '123123',
          connId  : '345345345',
-         path    : '/notif/subscription',
+         path    : '/api/v1/subscription',
          headers : {
             METHOD : 'GET'
          }
       }
 
-      var actual = notif_api.processMongrel2Message(testInput);
+      var actual = notif_api.processMongrel2Message(testInput, function(){});
 
 
       test.equals(actual.uuid,        '123123',       "should be '123123'")
