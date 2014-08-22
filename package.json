@@ -30,23 +30,27 @@
    "dependencies": {
       "async"                  : "",
       "nano"                   : "",
-      "m2nodehandler"          : "OPENi-ict/m2nodehandler",
-      "dbc"                    : "OPENi-ict/dbc",
-      "openi-logger"           : "OPENi-ict/openi-logger",
-      "grunt-contrib-jshint"   : "~0.6.4",
-      "grunt-contrib-nodeunit" : "~0.2.0",
-      "grunt-contrib-watch"    : "~0.5.3",
-      "grunt-contrib-clean"    : "",
-      "grunt-contrib-concat"   : "",
-      "grunt-contrib-uglify"   : "",
-      "grunt-istanbul-coverage": "",
-      "grunt-qunit-cov"        : "",
-      "grunt-plato"            : "",
-      "grunt-istanbul"         : "",
-      "grunt"                  : "~0.4.1",
-      "grunt-config"           : "",
-      "sinon"                  : ""
+      "http-status"            : "",
+      "m2nodehandler"          : "git+https://github.com/OPENi-ict/m2nodehandler",
+      "dbc"                    : "git+https://github.com/OPENi-ict/dbc",
+      "openi-logger"           : "git+https://github.com/OPENi-ict/openi-logger",
+      "openi-cloudlet-utils"   : "git+https://github.com/OPENi-ict/cloudlet-utils",
+      "couchbase"              : ""
    },
-
+  "devDependencies": {
+    "grunt-contrib-jshint"    : "~0.6.4",
+    "grunt-contrib-nodeunit"  : "~0.2.0",
+    "grunt-contrib-watch"     : "~0.5.3",
+    "grunt-contrib-clean"     : "",
+    "grunt-contrib-concat"    : "",
+    "grunt-contrib-uglify"    : "",
+    "grunt-istanbul-coverage" : "",
+    "grunt-qunit-cov"         : "",
+    "grunt-plato"             : "",
+    "grunt-istanbul"          : "",
+    "grunt"                   : "~0.4.1",
+    "grunt-config"            : "",
+    "sinon"                   : ""
+  },
    "keywords": []
 }
