@@ -1,6 +1,6 @@
 {
-   "name"        : "notif_api",
-   "description" : "Handles Notification calls for the OPENi Cloudlet Platform",
+   "name"        : "notifications",
+   "description" : "Handles Notification and subscription calls for the OPENi Cloudlet Platform",
    "version"     : "0.1.0",
    "homepage"    : "openi-ict.eu",
    "author"      : {
