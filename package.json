@@ -32,6 +32,7 @@
     "couchbase": "1.2.4",
     "dbc": "git+https://github.com/OPENi-ict/dbc",
     "http-status": "",
+    "loglet": "git://github.com/OPENi-ict/loglet",
     "m2nodehandler": "git+https://github.com/OPENi-ict/m2nodehandler",
     "nano": "",
     "openi-cloudlet-utils": "git+https://github.com/OPENi-ict/cloudlet-utils",
