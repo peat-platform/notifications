@@ -36,7 +36,8 @@
     "m2nodehandler": "git+https://github.com/OPENi-ict/m2nodehandler",
     "nano": "",
     "openi-cloudlet-utils": "git+https://github.com/OPENi-ict/cloudlet-utils",
-    "openi-logger": "git+https://github.com/OPENi-ict/openi-logger"
+    "openi-logger": "git+https://github.com/OPENi-ict/openi-logger",
+    "loglet": ""
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.4",
