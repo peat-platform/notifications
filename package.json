@@ -39,9 +39,9 @@
     "openi-logger": "git+https://github.com/OPENi-ict/openi-logger"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "~0.6.4",
     "grunt": "~0.4.1",
-    "grunt-config": "",
+    "grunt-contrib-jshint": "~0.6.4",
+    "jshint-stylish": "^1.0.0",
     "sinon": ""
   },
   "keywords": []
