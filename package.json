@@ -1,56 +1,48 @@
 {
-   "name"        : "notifications",
-   "description" : "Handles Notification and subscription calls for the OPENi Cloudlet Platform",
-   "version"     : "0.1.0",
-   "homepage"    : "openi-ict.eu",
-   "author"      : {
-      "name" : "dconway",
-      "email": "dconway@tssg.org"
-   },
-   "repository"  : {
-      "type": "git",
-      "url" : "git@github.com:OPENi-ict/notifications"
-   },
-   "bugs"        : {
-      "url": ""
-   },
-   "licenses"    : [
-      {
-         "type": "MIT",
-         "url" : "openi-ict.eu/blob/master/LICENSE-MIT"
-      }
-   ],
-   "main"        : "lib/main",
-   "engines"     : {
-      "node": ">= 0.8.0"
-   },
-   "scripts"     : {
-      "test": "grunt nodeunit"
-   },
-   "dependencies": {
-      "async"                  : "",
-      "nano"                   : "",
-      "http-status"            : "",
-      "m2nodehandler"          : "git+https://github.com/OPENi-ict/m2nodehandler",
-      "dbc"                    : "git+https://github.com/OPENi-ict/dbc",
-      "openi-logger"           : "git+https://github.com/OPENi-ict/openi-logger",
-      "openi-cloudlet-utils"   : "git+https://github.com/OPENi-ict/cloudlet-utils",
-      "couchbase"              : "1.2.4"
-   },
-  "devDependencies": {
-    "grunt-contrib-jshint"    : "~0.6.4",
-    "grunt-contrib-nodeunit"  : "~0.2.0",
-    "grunt-contrib-watch"     : "~0.5.3",
-    "grunt-contrib-clean"     : "",
-    "grunt-contrib-concat"    : "",
-    "grunt-contrib-uglify"    : "",
-    "grunt-istanbul-coverage" : "",
-    "grunt-qunit-cov"         : "",
-    "grunt-plato"             : "",
-    "grunt-istanbul"          : "",
-    "grunt"                   : "~0.4.1",
-    "grunt-config"            : "",
-    "sinon"                   : ""
+  "name": "notifications",
+  "description": "Handles Notification and subscription calls for the OPENi Cloudlet Platform",
+  "version": "0.1.0",
+  "homepage": "openi-ict.eu",
+  "author": {
+    "name": "dconway",
+    "email": "dconway@tssg.org"
   },
-   "keywords": []
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:OPENi-ict/notifications"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "openi-ict.eu/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/main",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "dependencies": {
+    "async": "",
+    "couchbase": "1.2.4",
+    "dbc": "git+https://github.com/OPENi-ict/dbc",
+    "http-status": "",
+    "loglet": "git://github.com/OPENi-ict/loglet",
+    "m2nodehandler": "git+https://github.com/OPENi-ict/m2nodehandler",
+    "nano": "",
+    "openi-cloudlet-utils": "git+https://github.com/OPENi-ict/cloudlet-utils",
+    "openi-logger": "git+https://github.com/OPENi-ict/openi-logger"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.4",
+    "jshint-stylish": "^1.0.0",
+    "sinon": ""
+  },
+  "keywords": []
 }
