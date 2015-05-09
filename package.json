@@ -17,7 +17,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "openi-ict.eu/blob/master/LICENSE-MIT"
+      "url": "peat-platform/blob/master/LICENSE-MIT"
     }
   ],
   "main": "lib/main",
